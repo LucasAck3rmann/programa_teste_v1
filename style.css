@@ -32,7 +32,6 @@ input[type="submit"]:hover {
     opacity: 0.8;
 }
 
-/* Adicione estas linhas ao seu CSS */
 #result {
     margin-top: 20px;
     padding: 10px;
@@ -52,9 +51,86 @@ input[type="submit"]:hover {
     opacity: 0.8;
 }
 
-/* Adicione estas linhas ao seu CSS */
 #lastResults {
     margin-top: 20px;
     padding: 10px;
     border: 1px solid #ccc;
+}
+
+#lastResults {
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+}
+
+#lastResults ol {
+    padding-left: 20px;
+}
+
+#lastResults li {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#lastResults button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+#lastResults button:hover {
+    background-color: #45a049;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+#removeAll {
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    float: right;
+}
+
+#removeAll:hover {
+    opacity: 0.8;
 }
