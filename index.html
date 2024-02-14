@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="taxForm">
+        <label for="netPrice">Preço líquido unitário:</label><br>
+        <input type="number" id="netPrice" name="netPrice" step="0.01"><br>
+        <label for="ipi">Porcentagem do IPI:</label><br>
+        <input type="number" id="ipi" name="ipi" step="0.01"><br>
+        <label for="totalTax">Total com impostos:</label><br>
+        <input type="number" id="totalTax" name="totalTax" step="0.01"><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <div id="result"></div>
+    <button id="copyButton">Copiar resultado</button>
+    <div id="lastResults"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
