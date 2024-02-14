@@ -24,7 +24,7 @@ document.getElementById('taxForm').addEventListener('keydown', function(event) {
             document.getElementById('result').textContent = 'A soma dos valores é: ' + netPricePlusTotalTaxMinusNetPriceTimesIpiValue.toFixed(3);
 
             // Adicione o novo resultado ao início do array results
-            results.unshift(extraEnd);
+            results.unshift(netPricePlusTotalTaxMinusNetPriceTimesIpiValue.toFixed(3));
 
             // Se o array tiver mais de 10 itens, remova o último item
             if (results.length > 10) {
