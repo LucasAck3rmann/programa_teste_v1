@@ -4,6 +4,8 @@ document.getElementById('taxForm').addEventListener('keydown', function(event) {
     if (event.key === 'Enter') {
         event.preventDefault();
         var inputs = Array.prototype.slice.call(this.getElementsByTagName('input'));
+        var submitButton = document.getElementById('submitButton'); // Obtenha o botão de envio
+        inputs.push(submitButton); // Adicione o botão de envio à lista de inputs
         var index = inputs.indexOf(document.activeElement);
         if (index === -1) {
             inputs[0].focus();
